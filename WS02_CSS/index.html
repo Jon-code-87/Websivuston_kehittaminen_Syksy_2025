@@ -1,77 +1,136 @@
 ﻿<!DOCTYPE html>
 <html lang="fi">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jon Mattila</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <title>Jon Mattila</title>
+<link rel="stylesheet" href="styles/styles.css">
+<style>
+      body {
+        background-color: lightgray;
+      }
 
-<body>
-  <header>
-    <h1>Minun kotisivuni</h1>
+      h1 {
+        color: green;
+        font-size: 2em;
+      }
+
+      p {
+        color: blue;
+      }
+      
+      div {
+        padding: 20px;
+        margin: 10px;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      th, td {
+        border: 1px solid #000;
+        padding: 8px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #ddd;
+      }
+
+      table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    
+    th {
+      background-color: #f2f2f2;
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    label {
+      font-weight: bold;
+    }
+    
+    input[type="text"], input[type="email"] {
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    </style>
+  </head>
+
+  <body>
+    <h1>Minun Kotisivuni</h1>
     <p>
-      Olen Jon Mattila. Opiskelen Laurea-ammattikorkeakoulussa Tikkurilassa tietojenkäsittelyä.
+      Olen Jon Mattila Opiskelen Laurea Ammattikorkeakoulussa Tikkurilassa
+      Tietojenkäsittelyä
     </p>
-    <img src="./images/kuva_sivuun.jpg" alt="Oma kuvani" class="pieni-kuva">
-  </header>
+    <img src="./images/kuva_sivuun.jpg" alt="Oma kuvani on tässä näkyvillä" />
 
-  <section>
-    <h2>Harrastukset</h2>
+    <h2>Harastukset listana</h2>
     <ol>
-      <li>Kuntosali</li>
-      <li>Lenkkeily</li>
-      <li>Pyöräily</li>
+      <li>kuntosali</li>
+      <li>lenkkeily</li>
+      <li>pyöräily</li>
     </ol>
-  </section>
 
-  <section>
-    <h2>Vapaa-ajalla</h2>
+    <h2>Vapaa ajalla</h2>
     <ul>
       <li>Katson televisiota</li>
       <li>Teen hyvää ruokaa</li>
       <li>Juon kaljaa</li>
     </ul>
-  </section>
 
-  <section>
-    <h2>Kurssit</h2>
     <table>
-      <thead>
-        <tr>
-          <th>Suoritetut kurssit</th>
-          <th>Menossa olevat kurssit</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Digitaalisten palveluiden kehittäminen, 5 osp</td>
-          <td>Websivuston kehittäminen, 5 osp</td>
-        </tr>
-        <tr>
-          <td>ICT-infrastruktuuri ja pilvipalveluiden kehittäminen, 5 osp</td>
-          <td>Professional Communication in English, 5 osp</td>
-        </tr>
-      </tbody>
+      <tr>
+        <th>Suoritetut kurssi</th>
+        <th>Menossa Olevat kurssit</th>
+      </tr>
+      <tr>
+        <td>Digitaalisten palveluiden kehittäminen, 5 osp</td>
+        <td>Websivuston kehittäminen, 5 osp</td>
+      </tr>
+      <tr>
+        <td>ICT-infrastuuri ja pilviplaveluiden kehittäminen, 5 osp</td>
+        <td>Professional communication in English, 5 osp</td>
+      </tr>
     </table>
-  </section>
+    <br />
+    <a href="https://www.google.fi">Visit Google</a>
 
-  <section>
-    <h2>Yhteystiedot</h2>
     <form>
-      <label for="name">Nimi:</label>
-      <input type="text" id="name" name="name" required>
-
-      <label for="email">Sähköposti:</label>
-      <input type="email" id="email" name="email" required>
-
-      <input type="submit" value="Lähetä">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" /><br /><br />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" /><br /><br />
+      <input type="submit" value="Submit" />
     </form>
-  </section>
 
-  <footer>
-    <p><a href="https://www.google.fi" target="_blank" rel="noopener noreferrer">Vieraile Googlessa</a></p>
-    <h1 class="punainen-otsikko">This is a heading</h1>
-  </footer>
-</body>
+    <h1 style="color: red;">This is a heading</h1>
+  </body>
 </html>

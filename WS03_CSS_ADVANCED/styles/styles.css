@@ -1,7 +1,7 @@
 h1 {
-  color: blue;
+  color: rgb(255, 0, 221);
   font-family: Arial, sans-serif;
-  font-size: 3em;
+  font-size: 80px;
 }
 
 p {
@@ -10,7 +10,7 @@ p {
 }
 
 body {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(102, 5, 86);
 }
 
 div {
@@ -29,7 +29,8 @@ table {
   margin: 0 auto;
 }
 
-th, td {
+th,
+td {
   border: 5px solid #4956ce;
   padding: 15px;
   text-align: center;
@@ -58,7 +59,7 @@ input[type="email"] {
 }
 
 input[type="submit"] {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   padding: 10px;
   border: none;
@@ -71,62 +72,62 @@ input[type="submit"]:hover {
 }
 
 .transition-button {
-        background-color: lightblue;
-        padding: 10px 20px;
-        border: none;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-      }
-      
-      .transition-button:hover {
-        background-color: lightcoral;
-      }
+  background-color: lightblue;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
-      .animation-box {
-        width: 50px;
-        height: 50px;
-        background-color: lightgreen;
-        position: relative;
-        animation: move 2s infinite alternate;
-      }
-      
-      @keyframes move {
-        from {
-          left: 0;
-        }
-        to {
-          left: 100px;
-        }
-      }
+.transition-button:hover {
+  background-color: lightcoral;
+}
 
-      .pseudo-list li:nth-child(odd) {
-        background-color: lightgray;
-      }
-      
-      .pseudo-list li:nth-child(even) {
-        background-color: white;
-      }
+.animation-box {
+  width: 50px;
+  height: 50px;
+  background-color: lightgreen;
+  position: relative;
+  animation: move 2s infinite alternate;
+}
 
-      .filter-image {
-        filter: grayscale(100%);
-        transition: filter 0.3s ease;
-      }
-      
-      .filter-image:hover {
-        filter: grayscale(0%);
-      }
+@keyframes move {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100px;
+  }
+}
 
-      .quote {
-        position: relative;
-        padding-left: 20px;
-        font-style: italic;
-      }
-      
-      .quote::before {
-        content: '“';
-        font-size: 40px;
-        position: absolute;
-        left: 0;
-        top: 0;
-        color: black;
-      }
+.pseudo-list li:nth-child(odd) {
+  background-color: lightgray;
+}
+
+.pseudo-list li:nth-child(even) {
+  background-color: white;
+}
+
+.filter-image {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.filter-image:hover {
+  filter: grayscale(0%);
+}
+
+.quote {
+  position: relative;
+  padding-left: 20px;
+  font-style: italic;
+}
+
+.quote::before {
+  content: "“";
+  font-size: 40px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: black;
+}

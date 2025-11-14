@@ -1,11 +1,111 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WS04_PAGE_LAYOUT</title>
-</head>
-<body>
-    <h1>WS04_PAGE_LAYOUT</h1>
-</body>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Jon Mattila</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Minun Kotisivuni</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">Lisää</a></li>
+          <li><a href="#services">Palveluni</a></li>
+          <li><a href="#contact">Yhteystiedot</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about">
+        <h2>Minusta</h2>
+        <p>This is a paragraph about me.</p>
+      </section>
+    </main>
+
+    <p>
+      Olen Jon Mattila Opiskelen Laurea Ammattikorkeakoulussa Tikkurilassa
+      Tietojenkäsittelyä
+    </p>
+    <img
+      src="./images/kuva_sivuun.jpg"
+      alt="Oma kuvani on tässä näkyvillä"
+      class="filter-image"
+    />
+
+    <h2>Harastukset listana</h2>
+
+    <ol>
+      <li>kuntosali</li>
+      <li>lenkkeily</li>
+      <li>pyöräily</li>
+    </ol>
+
+    <h2>Vapaa ajalla</h2>
+
+    <ul>
+      <li>Katson televisiota</li>
+      <li>Teen hyvää ruokaa</li>
+      <li>Juon kaljaa</li>
+    </ul>
+    <a href="https://www.google.fi">Visit Google</a>
+    <table>
+      <tr>
+        <th>Suoritetut kurssi</th>
+        <th>Menossa Olevat kurssit</th>
+      </tr>
+      <tr>
+        <td>Digitaalisten palveluiden kehittäminen, 5 osp</td>
+        <td>Websivuston kehittäminen, 5 osp</td>
+      </tr>
+      <tr>
+        <td>ICT-infrastuuri ja pilviplaveluiden kehittäminen, 5 osp</td>
+        <td>Professional communication in English, 5 osp</td>
+      </tr>
+    </table>
+    <br />
+    <h1 style="color: red">Syötä tietosi</h1>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" /><br /><br />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <button class="transition-button">Laita hiiri päälle</button>
+    <div class="animation-box"></div>
+
+    <ul class="pseudo-list">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+    </ul>
+
+    <blockquote class="quote">This is a sample quote.</blockquote>
+
+    <div class="flex-container">
+      <div class="box">Box 1</div>
+      <div class="box">Box 2</div>
+      <div class="box">Box 3</div>
+    </div>
+
+    <div class="grid-container">
+      <div class="grid-item">1</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">4</div>
+      <div class="grid-item">5</div>
+      <div class="grid-item">6</div>
+    </div>
+
+    <div class="responsive-box">Resize the window to see the effect</div>
+
+    <footer>
+      <p>Copyright 2025</p>
+    </footer>
+  </body>
 </html>

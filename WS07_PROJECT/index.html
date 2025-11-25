@@ -1,92 +1,77 @@
 ﻿<!DOCTYPE html>
 <html lang="fi">
   <head>
-    <meta charset="UTF-8" />
-    <title>kerailykellot</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kellomaailma</title>
+    
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
-
   <body>
-    <h1>Tervetuloa keräilykellojen maailmaan</h1>
-    
-    <p>
-      Tällä sivustolla pääset tutustumaan monipuoliseen kokoelmaan kelloja, joita on kerätty ja vaalittu vuosien varrella. Jokainen esitelty kello kertoo oman tarinansa – olipa kyseessä harvinainen löytö, historiallisesti merkittävä malli tai yksilöllisesti muokattu keräilykappale.
-Kokoelmasta löytyy erityisesti venäläisiä Vostok-malleja, jotka tunnetaan kestävyydestään ja omaleimaisesta muotoilustaan, sekä kiinalaisia kelloja, jotka tarjoavat kiinnostavan näkökulman Aasian kelloteollisuuden historiaan ja kehitykseen.
-Keräilykellot eivät ole vain ajan näyttäjiä, vaan ne heijastavat kulttuuria, tekniikkaa ja estetiikkaa eri aikakausilta. Sivuston tarkoituksena on jakaa tätä intohimoa ja tarjota kävijöille mahdollisuus inspiroitua kellomaailman monimuotoisuudesta.
-    </p>
-    <img
-      src="./images/kuva_sivuun.jpg"
-      alt="Oma kuvani on tässä näkyvillä"
-      class="filter-image"
-    />
-
-    <h2>Harastukset listana</h2>
-
-    <ol>
-      <li>kuntosali</li>
-      <li>lenkkeily</li>
-      <li>pyöräily</li>
-    </ol>
-
-    <h2>Vapaa ajalla</h2>
-
-    <ul>
-      <li>Katson televisiota</li>
-      <li>Teen hyvää ruokaa</li>
-      <li>Juon kaljaa</li>
-    </ul>
-    <a href="https://www.google.fi">Visit Google</a>
-    <table>
-      <tr>
-        <th>Suoritetut kurssi</th>
-        <th>Menossa Olevat kurssit</th>
-      </tr>
-      <tr>
-        <td>Digitaalisten palveluiden kehittäminen, 5 osp</td>
-        <td>Websivuston kehittäminen, 5 osp</td>
-      </tr>
-      <tr>
-        <td>ICT-infrastuuri ja pilviplaveluiden kehittäminen, 5 osp</td>
-        <td>Professional communication in English, 5 osp</td>
-      </tr>
-    </table>
-    <br />
-    <h1 style="color: red">Syötä tietosi</h1>
-    <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" /><br /><br />
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" /><br /><br />
-      <input type="submit" value="Submit" />
-    </form>
-
-    <button class="transition-button">Laita hiiri päälle</button>
-    <div class="animation-box"></div>
-
-    
-
-    <blockquote class="quote">This is a sample quote.</blockquote>
-
-    <header>
-      <h2 id="header-title">Tästä pääset siirtymään erisivuille</h2>
-      
-      <nav>
-        <ul>
-          <li><a href="file:///C:/Users/RauskisG/Documents/Kouluhommat1/Websivuston_kehittaminen_Syksy_2025/WS07_PROJECT/kellot1.html">Harvinaiset kellot</a></li>
-          <li><a href="#services">Uusia kelloja</a></li>
-          <li><a href="#contact">Työkalut</a></li>
-        </ul>
-         </header>
-
-      </nav>
-
-     
-      </ul>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Japanilaiset</a>
+            </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
     </nav>
-    
-    <footer>
-      <p>Copyright Jon Mattila 2025</p>
-    </footer>
+    <h1>Tervetuloa Kellomaailmaan!</h1>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <div class="text-bg-primary p-3">
+    <p>Sivusto on omistettu venäläisten, japanilaisten ja kiinalaisten kellojen esittelylle. Täällä voit tutustua erityisesti venäläisiin Vostok-kelloihin, joiden historia ulottuu Neuvostoliiton aikaan ja jotka tunnetaan kestävyydestään sekä omaperäisestä muotoilustaan. Esittelemme myös japanilaisia kelloja, kuten Seikon ja Citizenin malleja, jotka ovat maailmankuuluja tarkkuudestaan, innovaatioistaan ja ajattomasta tyylistään. Lisäksi sivustolla kerrotaan kiinalaisista kelloista, joiden merkitys kasvaa jatkuvasti ja jotka tarjoavat mielenkiintoisen yhdistelmän edullisuutta ja uusia teknisiä ratkaisuja.
+Sivuston tarkoituksena on tarjota tietoa, kuvia ja taustatarinoita näistä kelloista niin harrastajille kuin keräilijöillekin. Jokainen esitelty malli kertoo oman tarinansa – olipa kyseessä sotilaskäyttöön suunniteltu Vostok, japanilainen klassikko tai kiinalainen uutuus. Näiden kellojen kautta avautuu ikkuna eri maiden kulttuuriin, teknologiaan ja historiaan.</p> 
+    </div>
+
+ 
 
   </body>
 </html>

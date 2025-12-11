@@ -172,3 +172,25 @@ body.mina3 {
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+.carousel-item img {
+  width: 10cm;
+  height: 10cm;
+  object-fit: contain;      /* koko kuva näkyy, voi jäädä tyhjää tilaa */
+ 
+
+
+}
+
+
+

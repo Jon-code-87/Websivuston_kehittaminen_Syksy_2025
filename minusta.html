@@ -72,9 +72,29 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     
     
-    <img class="mina1" src="C:\Users\RauskisG\Documents\Kouluhommat1\Websivuston_kehittaminen_Syksy_2025\WS07_PROJECT\images\Minä\20251126_202241.jpg" alt="symboli" />
- 
-    <p>Olen Jon, 38-vuotias helsinkiläinen, ja opiskelen Laurea-ammattikorkeakoulussa Digitaalisten palveluiden kehittämistä. Vapaa-aikani merkittävimpiin harrastuksiin kuuluu kellojen keräily sekä niiden historian tutkiminen, mikä tarjoaa minulle mahdollisuuden yhdistää teknisen asiantuntemuksen ja kulttuurisen näkökulman.
+
+<div class="kuva-container1">
+    <img class="mina1" src="C:\Users\RauskisG\Documents\Kouluhommat1\Websivuston_kehittaminen_Syksy_2025\WS07_PROJECT\images\Minä\20251126_202241.jpg"  alt="mina kuva" />
+   <span id="hoverText">Hei, Minä olen Jon kiva, kun vierailet sivustollani.</span>
+</div>
+ <script>
+    const img = document.querySelector('.mina1');
+    const hoverText = document.getElementById('hoverText');
+
+    img.addEventListener('mousemove', (e) => {
+      hoverText.style.display = 'block';
+      hoverText.style.left = e.pageX + 10 + 'px';
+      hoverText.style.top = e.pageY + 10 + 'px';
+    });
+
+    img.addEventListener('mouseleave', () => {
+      hoverText.style.display = 'none';
+    });
+  </script>
+
+
+
+    <p class="p7">Olen Jon, 38-vuotias helsinkiläinen, ja opiskelen Laurea-ammattikorkeakoulussa Digitaalisten palveluiden kehittämistä. Vapaa-aikani merkittävimpiin harrastuksiin kuuluu kellojen keräily sekä niiden historian tutkiminen, mikä tarjoaa minulle mahdollisuuden yhdistää teknisen asiantuntemuksen ja kulttuurisen näkökulman.
 Lisäksi nautin matkustamisesta ja uusien kulttuurien syvällisestä tarkastelusta, sillä koen kansainvälisen vuorovaikutuksen rikastuttavan omaa maailmankuvaani. Kulinaristiset elämykset ovat myös keskeinen osa kiinnostuksenkohteitani: arvostan erityisesti monipuolista ja mausteista ruokakulttuuria.
 Nämä verkkosivut ovat ensimmäinen konkreettinen toteutukseni digitaalisen palvelun kehittämisen opinnoissa. Sivusto on laadittu osana Laurea-ammattikorkeakoulun kurssitehtävää, ja sen tarkoituksena on toimia sekä oppimisprosessin dokumentaationa että henkilökohtaisena portfoliona.</p>
  
@@ -99,6 +119,8 @@ Nämä verkkosivut ovat ensimmäinen konkreettinen toteutukseni digitaalisen pal
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+
+<h1 class="palaute1">Anna Palautetta</h1>
  <form class="container my-4" id="contactForm" novalidate>
   <div class="mb-3">
     <label for="email" class="form-label">Sähköpostiosoite</label>
@@ -149,8 +171,21 @@ Nämä verkkosivut ovat ensimmäinen konkreettinen toteutukseni digitaalisen pal
     }, false);
   })();
 </script>
+<header>
+      <h1 class="sivusto2">Sivustoja Kelloharrastajille</h1>
+      <nav>
+        <ul>
+          <li><a href="https://www.netgrafik.ch/russian-codes.htm">Russian-codes</a></li>
+          <li><a href="https://www.vostok-watches24.com/">Vostok virallinen myymälä</a></li>
+          <li><a href="https://www.japanwatchparts.co.uk/blogs/news/your-2025-guide-to-sourcing-genuine-japanese-watch-parts-for-seiko-and-citizen-repairs-expert-tips-for-strap-and-dial-replacements?srsltid=AfmBOoo7HQECCyABZJ8NZpa8yuyGwDnDAXC8xAze5xd6omjRE9R7zzyr">Japan-Watches</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
 <footer>
       <p class="p3">Copyright Jon Mattila 2025</p>
     </footer>
+ 
   </body>
 </html>

@@ -355,17 +355,14 @@ body.mina3 {
 
 .os1 {
   font-family: "Asset", serif;
-  font-weight: bolder;
-  font-size: 5vw;
-  text-align: center;
-  margin: 60px auto 10px;
-  background: linear-gradient(120deg, #f5e6b3, #d4af37, #c49a2a);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow:
-    0 2px 4px rgba(212, 175, 55, 0.3),
-    0 6px 12px rgba(212, 175, 55, 0.2);
-  animation: glow 3s ease-in-out infinite alternate;
+font-weight: bolder;
+font-size: 5vw;
+text-align: center;
+margin: 60px auto 10px;
+color: #d4af37; /* yksinkertainen keltainen väri */
+background: none;
+text-shadow: none;
+
 }
 
 .vintage-frame {

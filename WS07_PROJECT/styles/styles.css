@@ -194,8 +194,8 @@ h1.otsikko1 {
 }
 
 .p6 {
-  color: rgb(6, 46, 220);
-  font-size: 20px;
+  color: red;
+  font-size: 1vw;
   background-color: rgb(11, 8, 3);
   max-width: 100%;
   border: 11px solid rgb(189, 188, 188);

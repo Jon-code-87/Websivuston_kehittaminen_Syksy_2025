@@ -77,7 +77,7 @@ img {
 
 .img2 {
   display: block;
-  width: 100%;
+  width: 65%;
   height: auto;
   margin: 0 auto;
   border: 15px solid #8c6b1f;
@@ -94,6 +94,8 @@ img {
   margin-bottom: 20px;
   max-width: 100%;
   height: auto;
+   border: 15px solid #8c6b1f;
+  border-radius: 25px;
 }
 
 .p3 {
@@ -137,7 +139,7 @@ h1.otsikko1 {
   margin: 0 auto;
   padding: 10px;
   margin-bottom: 80px;
-  width: 100%;
+  width: 50%;
   height: auto;
 }
 
@@ -183,7 +185,7 @@ h1.otsikko1 {
   margin-top: 30px;
   margin-bottom: 30px;
   display: block;
-  width: 100%;
+  width: 50%;
   height: auto;
 }
 
@@ -195,7 +197,7 @@ h1.otsikko1 {
 
 .p6 {
   color: red;
-  font-size: 1vw;
+  font-size: 2vw;
   background-color: rgb(11, 8, 3);
   max-width: 100%;
   border: 11px solid rgb(189, 188, 188);
@@ -239,7 +241,7 @@ body.mina3 {
   text-align: center;
   margin: 1rem auto;
   font-size: clamp(1.5rem, 6vw, 3.5rem);
-  max-width: 100%;
+  max-width: 50%;
   white-space: normal;
   word-break: break-word;
   overflow-wrap: break-word;
@@ -394,8 +396,9 @@ h1.os1.mt-4 {
 }
 
 .jp3 {
-  color: #008b5a;
+  color: #d4af37;
   font-size: 20px;
+  text-align: center;
   background-color: rgb(11, 8, 3);
   max-width: 100%;
   border: 11px solid rgb(189, 188, 188);
@@ -462,4 +465,20 @@ body.japan1 .vintage-frame img {
 body.japan1 .vintage-frame {
   max-width: 100%;
   box-sizing: border-box;
+}
+
+.to-top {
+  display: inline-block;
+  background: rgb(222, 184, 135); /* beige/kulta */
+  color: white;
+  padding: 10px 14px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.to-top:hover {
+  background: #b8860b; /* tummempi kulta */
+  transform: scale(1.2);
 }

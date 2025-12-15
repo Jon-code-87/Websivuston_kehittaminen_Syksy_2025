@@ -5,7 +5,7 @@ body {
   color: #111;
   padding: 20px;
   border-radius: 12px;
-  background: radial-gradient(  
+  background: radial-gradient(
     circle at top,
     #1c223f 0%,
     #12162b 45%,
@@ -14,9 +14,15 @@ body {
 }
 
 @keyframes shine {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 h1 {
@@ -26,22 +32,18 @@ h1 {
   margin: 60px auto 10px;
   text-align: center;
   font-size: 5vw;
-  text-shadow:
-    0 0 5px rgba(120, 140, 255, 0.6),
-    0 0 15px rgba(120, 140, 255, 0.4),
-    0 0 30px rgba(120, 140, 255, 0.2);
+  text-shadow: 0 0 5px rgba(120, 140, 255, 0.6),
+    0 0 15px rgba(120, 140, 255, 0.4), 0 0 30px rgba(120, 140, 255, 0.2);
   animation: glow 3s ease-in-out infinite alternate;
 }
 
 @keyframes glow {
   from {
-    text-shadow:
-      0 0 5px rgba(120, 140, 255, 0.4),
+    text-shadow: 0 0 5px rgba(120, 140, 255, 0.4),
       0 0 15px rgba(120, 140, 255, 0.2);
   }
   to {
-    text-shadow:
-      0 0 15px rgba(120, 140, 255, 0.8),
+    text-shadow: 0 0 15px rgba(120, 140, 255, 0.8),
       0 0 40px rgba(120, 140, 255, 0.6);
   }
 }
@@ -94,7 +96,7 @@ img {
   margin-bottom: 20px;
   max-width: 100%;
   height: auto;
-   border: 15px solid #8c6b1f;
+  border: 15px solid #8c6b1f;
   border-radius: 25px;
 }
 
@@ -116,9 +118,15 @@ body.Soviet {
 }
 
 @keyframes gradientBG {
-  0% {background-position: 0% 50%;}
-  50% {background-position: 100% 50%;}
-  100% {background-position: 0% 50%;}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 h1.otsikko1 {
@@ -236,7 +244,7 @@ body.mina3 {
 }
 
 .japan2 {
-  font-family: 'Asset', serif;
+  font-family: "Asset", serif;
   font-weight: bold;
   text-align: center;
   margin: 1rem auto;
@@ -259,14 +267,14 @@ body.mina3 {
   color: #fff;
   padding: 5px 10px;
   border-radius: 4px;
-  display: none; 
+  display: none;
   pointer-events: none;
 }
 
 .carousel-item img {
   width: 10cm;
   height: 10cm;
-  object-fit: contain; 
+  object-fit: contain;
   margin-bottom: 60px;
   margin-top: 60px;
 }
@@ -357,30 +365,21 @@ body.mina3 {
 
 .os1 {
   font-family: "Asset", serif;
-font-weight: bolder;
-font-size: 5vw;
-text-align: center;
-margin: 60px auto 10px;
-color: #d4af37; /* yksinkertainen keltainen väri */
-background: none;
-text-shadow: none;
-
+  font-weight: bolder;
+  font-size: 5vw;
+  text-align: center;
+  margin: 60px auto 10px;
+  color: #d4af37;
+  background: none;
+  text-shadow: none;
 }
 
 .vintage-frame {
   display: inline-block;
   padding: 8px;
   border-radius: 16px;
-  background: linear-gradient(
-    135deg,
-    #f5e6b3,
-    #d4af37,
-    #c49a2a,
-    #f5e6b3
-  );
-  box-shadow:
-    inset 0 0 18px rgba(0, 0, 0, 0.45),
-    0 12px 30px rgba(0, 0, 0, 0.6);
+  background: linear-gradient(135deg, #f5e6b3, #d4af37, #c49a2a, #f5e6b3);
+  box-shadow: inset 0 0 18px rgba(0, 0, 0, 0.45), 0 12px 30px rgba(0, 0, 0, 0.6);
 }
 
 h1.os1.mt-4 {
@@ -414,7 +413,7 @@ h1.os1.mt-4 {
   font-size: 0.95rem;
   line-height: 1.4;
   margin-top: 0.3rem;
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
 }
 
 h5 {
@@ -423,14 +422,13 @@ h5 {
   font-weight: bolder;
 }
 
-/* --- JAPAN-SIVUN ERITYISET KORJAUKSET --- */
 body.japan1 .row {
   margin-left: 0;
   margin-right: 0;
 }
 
 @media (max-width: 767px) {
-  body.japan1 .col-md-6, 
+  body.japan1 .col-md-6,
   body.japan1 .col-lg-4 {
     flex: 0 0 100%;
     max-width: 100%;
@@ -469,7 +467,7 @@ body.japan1 .vintage-frame {
 
 .to-top {
   display: inline-block;
-  background: rgb(222, 184, 135); /* beige/kulta */
+  background: rgb(222, 184, 135);
   color: white;
   padding: 10px 14px;
   border-radius: 50%;
@@ -479,6 +477,6 @@ body.japan1 .vintage-frame {
 }
 
 .to-top:hover {
-  background: #b8860b; /* tummempi kulta */
+  background: #b8860b;
   transform: scale(1.2);
 }
